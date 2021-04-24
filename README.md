@@ -23,11 +23,11 @@ Initial IP may change, but I don't know. It is a public IP.
 
 
 #### Results that worked
-`nmap` of all ports found 7 open ports.
-`ftp` didn't connect in a useful manner. It would connect but then I couldn't pass anything. 
-`sftp` connected and was interactive!! Now try to use some password cracking for `robyn`, `admin`, & `anonymous`.
+ * `nmap` of all ports found 7 open ports.
+ * `ftp` didn't connect in a useful manner. It would connect but then I couldn't pass anything. 
+ * `sftp` connected and was *interactive!!* Now try to use some password cracking for `robyn`, `admin`, & `anonymous`.
 
 
 #### Things that didn't work
-Website won't load. 
-Initially couldn't get anything useful from `wget` or `curl` of website.
+Website won't load. Initially couldn't get anything useful from `wget` or `curl` of website.
+Hashcat couldn't crack the MD5 from the `nmap` scan.
