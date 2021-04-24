@@ -1,0 +1,166 @@
+# Nmap 7.91 scan initiated Fri Apr 23 16:05:39 2021 as: nmap -vv -sC -sV -p- -oN nmap/initial 54.229.22.118
+Increasing send delay for 54.229.22.118 from 0 to 5 due to 22 out of 73 dropped probes since last increase.
+Nmap scan report for ec2-54-229-22-118.eu-west-1.compute.amazonaws.com (54.229.22.118)
+Host is up, received syn-ack (0.100s latency).
+Scanned at 2021-04-23 16:05:40 EDT for 745s
+Not shown: 65528 filtered ports
+Reason: 65528 no-responses
+PORT      STATE SERVICE  REASON  VERSION
+21/tcp    open  ftp      syn-ack vsftpd 3.0.3
+22/tcp    open  ssh      syn-ack OpenSSH 5.9p1 Debian 5ubuntu1.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 46:b2:81:be:e0:bc:a7:86:39:39:82:5b:bf:e5:65:58 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3op12UwFIehC/VLx5tzBbmCUO/IzJlyueCj1/qP7tq3DcrBu9iQbC1gYemElU2FhqHH2KQr9MFrWRJgU4dH0iQOFld1WU9BNjfr6VcLOI+flLQstwWf1mJXEOdDjA98Cx+blYWG62qwXLiW+aq2jLfIZkVjJlp7OueNeocxE0P7ynTqJIadMfeNqNZ1Jc+s7aCBSg0NRSh0FsABAG+BSFhybnKXtApc+RG0QQ3vFpnU0k0PVZvg/qU/Eb6Oimm67d8hjclPbPpQoyvsdyOQG7yVS9eIglTr00ddw2Jn8wrapOa4TcBJGu9cgSgITHR8+htJ1LLj3EtsmJ0pErEv0B
+80/tcp    open  http     syn-ack Apache httpd 2.4.29
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Did not follow redirect to https://robyns-petshop.thm/
+443/tcp   open  ssl/http syn-ack Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Robyn&#039;s Pet Shop
+| ssl-cert: Subject: commonName=robyns-petshop.thm/organizationName=Robyns Petshop/stateOrProvinceName=South West/countryName=GB/localityName=Bristol/emailAddress=robyn@robyns-petshop.thm
+| Subject Alternative Name: DNS:robyns-petshop.thm, DNS:monitorr.robyns-petshop.thm, DNS:beta.robyns-petshop.thm, DNS:dev.robyns-petshop.thm
+| Issuer: commonName=robyns-petshop.thm/organizationName=Robyns Petshop/stateOrProvinceName=South West/countryName=GB/localityName=Bristol/emailAddress=robyn@robyns-petshop.thm
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-04-23T20:01:32
+| Not valid after:  2022-04-23T20:01:32
+| MD5:   e66d 0b3c 3791 c1ae 2274 abf6 b38f 090b
+| SHA-1: 7abc bb1c 2ac8 91cb bad5 eb32 eaf0 9818 ec23 4254
+| -----BEGIN CERTIFICATE-----
+| MIIEPzCCAyegAwIBAgIUAxDFFG7A2SeBUrz7BtpFNrq8wUswDQYJKoZIhvcNAQEL
+| BQAwgZMxCzAJBgNVBAYTAkdCMRMwEQYDVQQIDApTb3V0aCBXZXN0MRAwDgYDVQQH
+| DAdCcmlzdG9sMRcwFQYDVQQKDA5Sb2J5bnMgUGV0c2hvcDEbMBkGA1UEAwwScm9i
+| eW5zLXBldHNob3AudGhtMScwJQYJKoZIhvcNAQkBFhhyb2J5bkByb2J5bnMtcGV0
+| c2hvcC50aG0wHhcNMjEwNDIzMjAwMTMyWhcNMjIwNDIzMjAwMTMyWjCBkzELMAkG
+| A1UEBhMCR0IxEzARBgNVBAgMClNvdXRoIFdlc3QxEDAOBgNVBAcMB0JyaXN0b2wx
+| FzAVBgNVBAoMDlJvYnlucyBQZXRzaG9wMRswGQYDVQQDDBJyb2J5bnMtcGV0c2hv
+| cC50aG0xJzAlBgkqhkiG9w0BCQEWGHJvYnluQHJvYnlucy1wZXRzaG9wLnRobTCC
+| ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANDb5ihCA4Vuo9a0VjftScRF
+| aTVA5CT5+/7l7dgnNlU26bm2haAkrKHrhbxF6jIsoD1r7iu2vIExE2V5O6Cya3jD
+| 07UX3q1GlLDMn9AQ8Mid7MsnW7WRaayqwMNtyRS2+TfrIskKupUQGXxVauVdbaJP
+| nfys6zCnu7VyUPR1PnuDa06nBfeobkE5caAVhFWjLn7EGlfBSkaDaZD2FPnisg+A
+| QuLaKJhMLVJdHJIIg40asjviOfO1+d1NYr9AqOlO0hIdyNreY3tnTYNUerERT+OF
+| U/ZSy2dOJZxXridpj/eXIVGVKZuHOzQHK+TnZNMt4wTdPTrwGCUCqKr4odkDHp0C
+| AwEAAaOBiDCBhTAJBgNVHRMEAjAAMAsGA1UdDwQEAwIF4DBrBgNVHREEZDBighJy
+| b2J5bnMtcGV0c2hvcC50aG2CG21vbml0b3JyLnJvYnlucy1wZXRzaG9wLnRobYIX
+| YmV0YS5yb2J5bnMtcGV0c2hvcC50aG2CFmRldi5yb2J5bnMtcGV0c2hvcC50aG0w
+| DQYJKoZIhvcNAQELBQADggEBABhk/M2V2xJGV2rD4oabzZN0sIGGkZnh20lflmL2
+| 2QDYM/cmU/uQzOgZNE5Ap4zgzZm8DcVwavpK2QD77zOG+9lBdUr/G5jvXinX3/ul
+| VjH6YXOsbCxyFYSE9dVNvLH4hT+SGiOkeb/H/hQlp11eavcXlT9oqAd6OLMNPr9d
+| JMbP2qcG+AOShrHm5QuUQyaC/2144w5BEh54uwpVaMiAhVs42yQ3+hH4gD74B2m/
+| sj/KWimW9WcgnIzvNmuPA3wxsDAv0IBw8eDIy41ZLwPmyWtkzmRQeLXZXbdZ7QG9
+| wy+XM41aKpuCLSaOqE+0T9Qa7FesPMk5fq1iaC6JvLUTC24=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+8000/tcp  open  http-alt syn-ack
+| fingerprint-strings: 
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 15
+|_    Request
+|_http-favicon: Unknown favicon MD5: B6994EF6212AE25B8698FDA58329B011
+|_http-title: Under Development!
+8096/tcp  open  unknown  syn-ack
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Connection: close
+|     Date: Fri, 23 Apr 2021 20:16:40 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|     X-Response-Time-ms: 243
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 23 Apr 2021 20:16:12 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 302 Found
+|     Connection: close
+|     Date: Fri, 23 Apr 2021 20:16:12 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|     Location: /web/index.html
+|   Help, SSLSessionReq: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 23 Apr 2021 20:16:28 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   Kerberos, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 23 Apr 2021 20:16:29 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   LPDString: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 23 Apr 2021 20:16:40 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   RTSPRequest: 
+|     HTTP/1.1 505 HTTP Version Not Supported
+|     Connection: close
+|     Date: Fri, 23 Apr 2021 20:16:13 GMT
+|     Server: Kestrel
+|_    Content-Length: 0
+22222/tcp open  ssh      syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 8d:99:92:52:8e:73:ed:91:01:d3:a7:a0:87:37:f0:4f (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpLAsRYbJYyJ+bS8pAi+HpQupaD+Oo76UbITMFLP+pZyxM5ChxwyPbCYKIitboOoa3PWRe6V4UjBcOPtNujmv2tjCcETv/tp2QyuHPW6Go6ZzFDn0V8SUGhWIqwLge79Yp9FwG7y9tUxqnViQCJBfWtY5kJh11Iy/X4Arg1ifiT9FAExpVt3fgZl3HN6bxwyfFIQfxVqySgdQxSgqpVTU4Kc3pkZM1UL+c+kzfCYwiNJL0WHAYNl3u77H+Lp5J371BSJTWpaNS/bkS2KSqG/DPafCg4qhOn/rjDldHtQ3Eukcj0AGg/jBYbrYgAhsBXLJbhHTNTt4zrQe5sRArZ8ab
+|   256 5a:c0:cc:a1:a8:79:eb:fd:6f:cf:f8:78:0d:2f:5d:db (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHcGmMvzfmx0EHLv5MLqqn0a4WVxxU7dcNq0F03HIZIY002BsPtaEXkbkcn5FdDsjDGuBWq+1JGB/xDI5py485o=
+|   256 0a:ca:b8:39:4e:ca:e3:cf:86:5c:88:b9:2e:25:7a:1b (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFpTk+WaMxq8E5ToT9RI4THsaxdarA4tACYEdoosbPD8
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8000-TCP:V=7.91%I=7%D=4/23%Time=60832B12%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,3F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x2
+SF:015\r\n\r\n400\x20Bad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8096-TCP:V=7.91%I=7%D=4/23%Time=60832B0D%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20clo
+SF:se\r\nDate:\x20Fri,\x2023\x20Apr\x202021\x2020:16:12\x20GMT\r\nServer:\
+SF:x20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(GetRequest,8D,"HTTP/1\.1
+SF:\x20302\x20Found\r\nConnection:\x20close\r\nDate:\x20Fri,\x2023\x20Apr\
+SF:x202021\x2020:16:12\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x20
+SF:0\r\nLocation:\x20/web/index\.html\r\n\r\n")%r(HTTPOptions,8D,"HTTP/1\.
+SF:1\x20302\x20Found\r\nConnection:\x20close\r\nDate:\x20Fri,\x2023\x20Apr
+SF:\x202021\x2020:16:12\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x2
+SF:00\r\nLocation:\x20/web/index\.html\r\n\r\n")%r(RTSPRequest,87,"HTTP/1\
+SF:.1\x20505\x20HTTP\x20Version\x20Not\x20Supported\r\nConnection:\x20clos
+SF:e\r\nDate:\x20Fri,\x2023\x20Apr\x202021\x2020:16:13\x20GMT\r\nServer:\x
+SF:20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(Help,78,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Fri,\x2023\x20Ap
+SF:r\x202021\x2020:16:28\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x
+SF:200\r\n\r\n")%r(SSLSessionReq,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nConnection:\x20close\r\nDate:\x20Fri,\x2023\x20Apr\x202021\x2020:16:28
+SF:\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(Termi
+SF:nalServerCookie,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x
+SF:20close\r\nDate:\x20Fri,\x2023\x20Apr\x202021\x2020:16:29\x20GMT\r\nSer
+SF:ver:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(TLSSessionReq,78,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20F
+SF:ri,\x2023\x20Apr\x202021\x2020:16:29\x20GMT\r\nServer:\x20Kestrel\r\nCo
+SF:ntent-Length:\x200\r\n\r\n")%r(Kerberos,78,"HTTP/1\.1\x20400\x20Bad\x20
+SF:Request\r\nConnection:\x20close\r\nDate:\x20Fri,\x2023\x20Apr\x202021\x
+SF:2020:16:29\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n
+SF:")%r(FourOhFourRequest,8F,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnecti
+SF:on:\x20close\r\nDate:\x20Fri,\x2023\x20Apr\x202021\x2020:16:40\x20GMT\r
+SF:\nServer:\x20Kestrel\r\nContent-Length:\x200\r\nX-Response-Time-ms:\x20
+SF:243\r\n\r\n")%r(LPDString,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCon
+SF:nection:\x20close\r\nDate:\x20Fri,\x2023\x20Apr\x202021\x2020:16:40\x20
+SF:GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n");
+Service Info: Host: robyns-petshop.thm; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr 23 16:18:05 2021 -- 1 IP address (1 host up) scanned in 745.27 seconds
