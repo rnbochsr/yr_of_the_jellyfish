@@ -1,0 +1,47 @@
+# Nmap 7.80 scan initiated Sun May  2 02:05:50 2021 as: nmap -v -sC -sV -oN nmap_initial 54.74.45.96
+Nmap scan report for robyns-petshop.thm (54.74.45.96)
+Host is up (0.00054s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      vsftpd 3.0.3
+22/tcp   open  ssh      OpenSSH 5.9p1 Debian 5ubuntu1.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|_  2048 46:b2:81:be:e0:bc:a7:86:39:39:82:5b:bf:e5:65:58 (RSA)
+80/tcp   open  http     Apache httpd 2.4.29
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Did not follow redirect to https://robyns-petshop.thm/
+443/tcp  open  ssl/http Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Robyn&#039;s Pet Shop
+| ssl-cert: Subject: commonName=robyns-petshop.thm/organizationName=Robyns Petshop/stateOrProvinceName=South West/countryName=GB
+| Subject Alternative Name: DNS:robyns-petshop.thm, DNS:monitorr.robyns-petshop.thm, DNS:beta.robyns-petshop.thm, DNS:dev.robyns-petshop.thm
+| Issuer: commonName=robyns-petshop.thm/organizationName=Robyns Petshop/stateOrProvinceName=South West/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-05-02T01:41:20
+| Not valid after:  2022-05-02T01:41:20
+| MD5:   c7d6 2330 0bac 7967 afc6 7f99 2165 5773
+|_SHA-1: fb3f 357e de1f 32d3 5a98 6403 64b7 f39a 0c80 ed20
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+8000/tcp open  http-alt
+| fingerprint-strings: 
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 15
+|_    Request
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8000-TCP:V=7.80%I=7%D=5/2%Time=608E0910%P=x86_64-pc-linux-gnu%r(Gen
+SF:ericLines,3F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x20
+SF:15\r\n\r\n400\x20Bad\x20Request");
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May  2 02:06:13 2021 -- 1 IP address (1 host up) scanned in 23.18 seconds
