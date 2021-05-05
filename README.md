@@ -54,7 +54,7 @@ MuirlandOracle was right. Some boxes do sting.
 * AmazonAWS exploits - Lots of reading about this. I am completely unfamiliar with it.
 * Email server - I can't find an email server running on the site. There has to be since the `Contact Us` page lists `staff@robyns-petshop.thm` as a data point.
 * Dirbuster - In process. See dirbuster_output.md for listing and notes.
-* Gobuster `-k` flag? `gobuster -k dir -u http://IP -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt'.
+* Gobuster `-k` flag? `gobuster -k dir -u http://IP -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt`.
 * Hydra
 * Nitko
 * Use various `password attack` options in Kali
