@@ -56,9 +56,14 @@ Look for:
 
 
 ### Resources
-* `nc -lnvp [port]` to receive reverse shell callbacks.
-* VPS for web server if needed.
-* `ngrok` to set up web server forwarding to internal local port? Need to look into this program and see what it does.
-* `g0tmilk` Privilege Escalation Database
 * Mitre CVE Database.
 * Exploit Database.
+* `nc -lnvp [port]` to receive reverse shell callbacks.
+* `Github.com` to search for users and cheatsheets for things I might need. 
+  * `GTFObin` has info on lots of stuff.
+  * Reverse shell functions
+  * Shell stabilization
+  * *LOTS* of stuff is here. It's just a matter of knowing what to look for. 
+* VPS for web server if needed.
+* I've heard people talk about `ngrok` to use with `nc`. I'm not sure how. Possibly if you don't have `nc` but I thought it was a standard Linux program.
+* Mention of `g0tmilk` Privilege Escalation Database. Look into this.

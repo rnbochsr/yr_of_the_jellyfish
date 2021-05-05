@@ -54,7 +54,7 @@ MuirlandOracle was right. Some boxes do sting.
 * AmazonAWS exploits - Lots of reading about this. I am completely unfamiliar with it.
 * Email server - I can't find an email server running on the site. There has to be since the `Contact Us` page lists `staff@robyns-petshop.thm` as a data point.
 * Dirbuster - In process. See dirbuster_output.md for listing and notes.
-* Gobuster `-k` flag? `gobuster -k dir -u http://<IP> -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+* Gobuster `-k` flag? `gobuster -k dir -u http://IP -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt'.
 * Hydra
 * Nitko
 * Use various `password attack` options in Kali
@@ -118,7 +118,7 @@ Settings on page point to *LOCAL* directories
 * Modifying the `/etc/hosts` file allowed the website to load! Remember this for future pentests.
 * `ftp` didn't connect in a useful manner from my IP. It would connect but then I couldn't pass anything.
 * `sftp` connected and was *interactive!!* Now try to use some password cracking for `robyn`, `admin`, & `anonymous`.
-* `ftp` on the Kali attack box connects without any issues. It allowed me to interact. Now to see if I can brute the password.
+* `ftp` on the THM Kali attack box connects without any issues. It allowed me to interact. Now to see if I can brute the password.
 * `http://robyns-petshop.thm:8000` gets you to a page that says enter your ID `...:8000/ID_Here`. `robyn`, `admin`, & `staff` don't work. Look for other options.
 * `http://robyns-petshop.thm:8096` is a login page for Jellyfin. It seems to be a media player and control panel. I'll try to manual brute forcing logins.
 * `https://robyns-petshop.thm/business` is a login page. It is asking for `Business Credentials Please`. User Name/password.
