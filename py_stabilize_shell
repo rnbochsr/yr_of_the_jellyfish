@@ -1,0 +1,7 @@
+python3 -c "import pty; pty.spawn('/bin/bash')"
+^Z # This puts the reverse shell into the background.
+stty raw -echo # Copies info from our local shell.
+fg # This brings the reverse shell back to the foreground.
+sudo nc -lnvp <port> # The sudo command may or may not be visible. It just appears as the job comes back to the foreground. You do not type it.
+reset # This resets the fragile shell. May or may not be necessary.
+export TERM=xterm
