@@ -174,7 +174,7 @@ Using Exploit-DB.com to check for CVEs this time, I listed all the software I co
 
 It seems there are 2 versions. Version #1 is asking for an account on Ubuntu and a user ID:password combo. I don't have any of that yet. Version #2 just runs on the local server without the Ubuntu account or id:password combo. I'll try that one.
 
-I started a local PHP HTTP server and sent the files to the target. Ran the file with Python and it ran! No errors, but I can't change users. More reading.
+I started a local Python HTTP server and sent the files to the target. Ran the file with Python and it ran! No errors, but I can't change users. More reading.
 
 As it turns out, stabilizing a shell does more than let you use tab-complete and arrow keys. It also allows certain commands to work like `su`. I didn't know that. I hadn't stabilized the shell properly before so even though the exploit ran, the `su` command was blocked. I'll try again and this time fully stabilize the shell. 
 
